@@ -68,7 +68,7 @@ body {
   background-color: hsl(216, 12%, 54%);
 }
 
-.card__rating-button:active {
+.card__rating-button.selected {
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
 }
@@ -96,6 +96,13 @@ body {
   background-color: hsl(0, 0%, 100%);
 }
 
+.card__submit-button.disabled {
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+  cursor: default;
+  pointer-events: none;
+}
+
 .card__result-box {
   background-color: hsl(213, 19%, 18%);
   padding: 0.6rem;
@@ -106,4 +113,8 @@ body {
 .card__result-text {
   color: hsl(25, 97%, 53%);
   margin: 0;
+}
+
+.hide {
+  display: none;
 }

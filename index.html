@@ -16,7 +16,7 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <div class="card">
+    <form class="card">
       <div class="card__star-icon">
         <img src="./assets/images/icon-star.svg" alt="star" />
       </div>
@@ -26,19 +26,19 @@
         offering!
       </p>
       <div class="card__rating-button-group">
-        <button class="card__rating-button">1</button>
-        <button class="card__rating-button">2</button>
-        <button class="card__rating-button">3</button>
-        <button class="card__rating-button">4</button>
-        <button class="card__rating-button">5</button>
+        <button type="button" class="card__rating-button">1</button>
+        <button type="button" class="card__rating-button">2</button>
+        <button type="button" class="card__rating-button">3</button>
+        <button type="button" class="card__rating-button">4</button>
+        <button type="button" class="card__rating-button">5</button>
       </div>
-      <button class="card__submit-button">Submit</button>
-    </div>
+      <button type="submit" class="card__submit-button disabled">Submit</button>
+    </form>
 
-    <div class="card">
+    <div class="card hide">
       <img src="./assets/images/illustration-thank-you.svg" alt="star" />
       <div class="card__result-box">
-        <p class="card__result-text">You selected 4 out of 5</p>
+        <p class="card__result-text">You selected <span id="final-rate">4</span>out of 5</p>
       </div>
       <h2 class="card__title--greetings">Thank you!</h2>
       <p class="card__text--greetings">
@@ -46,5 +46,7 @@
         touch!
       </p>
     </div>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
