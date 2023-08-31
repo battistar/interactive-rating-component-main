@@ -16,32 +16,32 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <form class="card">
-      <div class="card__star-icon">
-        <img src="./assets/images/icon-star.svg" alt="star" />
+    <form id="rating-card" class="card-rating">
+      <div class="card-rating__star-icon-box">
+        <img class="card-rating__star-icon" src="./assets/images/icon-star.svg" alt="star" />
       </div>
-      <h2 class="card__title">How did we do?</h2>
-      <p class="card__text">
+      <h2 class="card-rating__title">How did we do?</h2>
+      <p class="card-rating__text">
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our
         offering!
       </p>
-      <div class="card__rating-button-group">
-        <button type="button" class="card__rating-button">1</button>
-        <button type="button" class="card__rating-button">2</button>
-        <button type="button" class="card__rating-button">3</button>
-        <button type="button" class="card__rating-button">4</button>
-        <button type="button" class="card__rating-button">5</button>
+      <div class="card-rating__rating-button-group">
+        <button type="button" id="rating-button-1" class="card-rating__rating-button">1</button>
+        <button type="button" id="rating-button-2" class="card-rating__rating-button">2</button>
+        <button type="button" id="rating-button-3" class="card-rating__rating-button">3</button>
+        <button type="button" id="rating-button-4" class="card-rating__rating-button">4</button>
+        <button type="button" id="rating-button-5" class="card-rating__rating-button">5</button>
       </div>
-      <button type="submit" class="card__submit-button disabled">Submit</button>
+      <button type="submit" id="submit-button" class="card-rating__submit-button disabled">Submit</button>
     </form>
 
-    <div class="card hide">
+    <div id="greetings-card" class="card-greetings hide">
       <img src="./assets/images/illustration-thank-you.svg" alt="star" />
-      <div class="card__result-box">
-        <p class="card__result-text">You selected <span id="final-rate">4</span>out of 5</p>
+      <div class="card-greetings__result-box">
+        <p class="card-greetings__result-text">You selected <span id="final-rate">4</span>out of 5</p>
       </div>
-      <h2 class="card__title--greetings">Thank you!</h2>
-      <p class="card__text--greetings">
+      <h2 class="card-greetings__title">Thank you!</h2>
+      <p class="card-greetings__text">
         We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
         touch!
       </p>
